@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITパスポート 耳勉＆図解アプリ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>ITパスポート<span class="subtitle">耳勉＆図解マスター</span></h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="用語、アルファベット略語...">
+        </div>
+    </header>
+
+    <nav class="category-nav">
+        <button class="nav-btn active" data-filter="all">全て</button>
+        <button class="nav-btn" data-filter="technology">テクノロジ</button>
+        <button class="nav-btn" data-filter="management">マネジメント</button>
+        <button class="nav-btn" data-filter="strategy">ストラテジ</button>
+        <button class="nav-btn bookmark-btn" data-filter="check">★要復習</button>
+    </nav>
+
+    <main id="term-list" class="term-container">
+        </main>
+
+    <footer class="audio-player">
+        <div class="player-info">
+            <span id="current-term">再生停止中</span>
+        </div>
+        <div class="player-controls">
+            <button id="btn-prev">⏮</button>
+            <button id="btn-play">▶ 再生</button>
+            <button id="btn-next">⏭</button>
+            <select id="speed-select">
+                <option value="1.0">x1.0</option>
+                <option value="1.5">x1.5</option>
+                <option value="2.0">x2.0</option>
+            </select>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
